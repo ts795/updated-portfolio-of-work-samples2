@@ -9,7 +9,7 @@ This web page is a portfolio of full stack development work created by Sam Linga
 To view and edit the HTML and CSS you can clone the repo from github using the following command:
 
 ```
-git@github.com:ts795/git@github.com:ts795/portfolio-of-work-samples.git
+git@github.com:ts795/git@github.com:ts795/portfolio-of-work-samples2.git
 ```
 
 ### Prerequisites
@@ -27,14 +27,14 @@ No installation of software is required.
 
 ## Deployed Link
 
-* [See Live Site](https://ts795.github.io/portfolio-of-work-samples/)
+* [See Live Site](https://ts795.github.io/portfolio-of-work-samples2/)
 
 
 ## Authors
 
 * Sam Lingampalli
 
-- [Link to Portfolio Site](https://ts795.github.io/portfolio-of-work-samples/)
+- [Link to Portfolio Site](https://ts795.github.io/portfolio-of-work-samples2/)
 - [Link to Github](https://github.com/ts795)
 - [Link to LinkedIn](https://www.linkedin.com/in/sam-l-3b3838132/)
 
