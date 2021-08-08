@@ -1,0 +1,197 @@
+:root {
+    /* declare variables for the color scheme */
+    --text-color1: navy;
+    --text-color2: blue;
+    --background-color1: turquoise;
+  }
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Flex the name and navigation links at the top of the page */
+#name-and-nav-links {
+    display: flex;
+    /* add 1% margins on left, right and bottom */
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+/* Show the name on the left */
+#name-and-nav-links h1 {
+    flex: auto;
+}
+
+/* Show the navigation links on the right and evenly distribute the space between the links */
+#name-and-nav-links nav {
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Set the font size links in the header */
+.header-text {
+    font-size: 200%;
+}
+
+.header-name {
+    font-size: 300%;
+}
+
+/* Set the color for the h1*/ 
+h1 {
+    color: var(--text-color2);
+}
+
+/* styling for the header image */
+header img {
+    /* add 1% vertical margin and 1% horizontal margin */
+    margin: 1% 1%;
+}
+
+/* background color for the header */
+header {
+    background-color: var(--background-color1);
+}
+
+/* Font size for h2 elements */
+h2 {
+    font-size: 175%;
+    color: var(--text-color1);
+}
+
+/* Font size and padding for h3 elements */
+h3 {
+    font-size: 150%;
+    color: var(--text-color2);
+    padding: 3px;
+}
+
+/* Styling for content sections */
+.content-container {
+    /* add 1% margins */
+    margin: 1%;
+}
+
+/* Put the headers for the content sections on the left */
+.content-container h2 {
+    float: left;
+    width: 19%;
+    /* Put the text on the right */
+    text-align: right;
+    padding-right: 1%;
+}
+
+/* Styling for the conet in each section */
+.content {
+    display: flex;
+    /* Make the content wrap to the next line if they overflow */
+    flex-wrap: wrap;
+    /* Add a line between the content header and the content */
+    border-left: 5px solid var(--text-color1);
+    padding-left: 1%;
+}
+
+/* Make the contact me links show on the right of the page in one line */
+#contact-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Size links as per width and height but grow and shrink to with the container */
+#contact-links a {
+    flex: auto;
+}
+
+/* Add a margin to adjacent cards */
+.card {
+    margin: 1%;
+    width: 98%;
+}
+
+/* Make the card image fill the width and height of the card */
+.card img {
+    width: 100%;
+    /* Put a border around the image */
+    border: 10px solid var(--background-color1);
+}
+
+/* Make the project description appear over the image */
+.project-description {
+    position: relative;
+    top: 50%;
+    left: 0%;
+    background-color: var(--background-color1);
+    width: 33%;
+}
+
+/* Set the font color for paragraph text and links */
+p, a {
+    color: var(--text-color1);
+}
+
+/* Set the font size for the about me text */
+#about-me-content {
+    font-size: 125%;
+}
+
+/* Set the font size for the contact links */
+#contact-links {
+    font-size: 125%;
+}
+
+/* Make the card brighter when hovering over it */
+.card {
+    opacity: .5;
+}
+
+.card:hover {
+    opacity: 0.99;
+}
+
+/* Add padding to card text */
+.card p {
+    padding: 3px;
+}
+
+@media screen and (max-width: 1016px) {
+    /* Take up as much space as needed for the project description so it fits*/
+    .project-description {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        background-color: var(--background-color1);
+        width: 100%;
+    }
+}
+
+/* Make the name and nav links stack so they don't overlap*/
+@media screen and (max-width: 792px) {
+    #name-and-nav-links {
+        flex-direction: column;
+    }
+
+    #name-and-nav-links nav {
+        flex-direction: column;
+    }
+
+}
+
+/* Stack content for small screens */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        /* Remove the dividing line for the columns */
+        border-left: none;
+        padding-left: 0%;
+        padding-bottom: 1%;
+    }
+
+    .content-container h2 {
+        float: none;
+        width: auto;
+        text-align: left;
+        padding-right: 0%;
+    }
+}
