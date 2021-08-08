@@ -52,7 +52,8 @@ header img {
 
 /* background color for the header */
 header {
-    background-color: var(--background-color1);
+    background-image: url('../images/courtnie-tosana-X7DG-f7Y0xw-unsplash.jpg');
+    background-size: cover;
 }
 
 /* Font size for h2 elements */
